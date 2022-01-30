@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/AxoyTO/Blockchain/issues"
   },
-  "homepage": "https://github.com/AxoyTO/Blockchain#readme"
+  "homepage": "https://github.com/AxoyTO/Blockchain#readme",
+  "dependencies": {
+    "hex-to-binary": "^1.0.1"
+  }
 }
