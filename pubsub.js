@@ -77,7 +77,20 @@ class PubSub {
     }
 
     publish({ channel, message }) {
+        /*
+        this.pubnub.unsubscribe(channel, () => {
+            this.pubnub.publish({ message, channel }, () => {
+                this.pubnub.subscribe(channel)
+            });
+        })
+        */
+
+        //POTENTIAL BUG
+        this.pubnub.unsubscribeAll(channel);
         this.pubnub.publish({ message, channel });
+
+        //UNNECESSARY SUBSCRIBE
+        //this.pubnub.subscribe(channel);
     }
 
     broadcastChain() {
