@@ -65,6 +65,9 @@ jspm_packages/
 # Optional npm cache directory
 .npm
 
+# C/CPP Config directory
+.vscode
+
 # Optional eslint cache
 .eslintcache
 
