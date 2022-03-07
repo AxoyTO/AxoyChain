@@ -17,7 +17,7 @@ class Wallet {
 
     createTransaction({ amount, recipient }) {
         if (amount > this.balance) {
-            throw new Error('Amount exceeds balance')
+            throw new Error(`Amount:${amount} exceeds balance:${this.balance}`)
         }
 
         return new Transaction({ senderWallet: this, amount, recipient })
