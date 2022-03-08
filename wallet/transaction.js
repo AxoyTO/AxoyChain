@@ -1,4 +1,3 @@
-const Wallet = require('./index')
 const uuid = require('uuid')
 const { verifySignature } = require('../util')
 const { MINING_REWARD, REWARD_INPUT } = require('../config')
