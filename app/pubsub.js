@@ -1,9 +1,9 @@
 const PubNub = require("pubnub")
 
 const credentials = {
-    publishKey: "**********",
-    subscribeKey: "**********",
-    secretKey: "**********",
+    publishKey: "pub-c-8e1a4b3a-ea18-4599-bb78-34e77efadb42",
+    subscribeKey: "sub-c-e12b7702-8286-11ec-9f2b-a2cedba671e8",
+    secretKey: "sec-c-NWM2NGRmOWUtMjhlYS00ODFhLTgzNWQtOGFhNGFkYWYwNzRj",
     uuid: "AxoyTO"
 }
 
@@ -49,25 +49,19 @@ class PubSub {
     listener() {
         return {
             message: messageObject => {
-                const { channel, message } = messageObject;
-
                 console.log(`Message received. Channel: ${channel}. Message: ${message}`);
                 const parsedMessage = JSON.parse(message);
 
                 switch (channel) {
                     case CHANNELS.BLOCKCHAIN:
-                        this.blockchain.replaceChain(parsedMessage, true, () => {
+                        this.blockchain.replaceChain(parsedMessage, () => {
                             this.transactionPool.clearBlockchainTransactions(
-                                { chain: parsedMessage.chain }
+                                { chain: parsedMessage }
                             );
                         });
                         break;
                     case CHANNELS.TRANSACTION:
-                        if (!this.transactionPool.existingTransaction({
-                            inputAddress: this.wallet.publicKey
-                        })) {
-                            this.transactionPool.setTransaction(parsedMessage);
-                        }
+                        this.transactionPool.setTransaction(parsedMessage);
                         break;
                     default:
                         return;
