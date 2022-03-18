@@ -17,7 +17,11 @@
     "build-client": "npm run clean && parcel build client/src/index.html --out-dir client/dist",
     "dev-client": "npm run clean && parcel client/src/index.html --out-dir client/dist",
     "clean": "rm -rf .cache client/dist",
-    "clean-windows": "if exist .cache rd /s /q \".cache\" && if exist client/dist rd /s /q \"client/dist\""
+    "build-client-windows": "npm run clean-windows && parcel build client/src/index.html --out-dir client/dist",
+    "dev-windows": "start /b npm run dev-client-windows && start nodemon index.js",
+    "dev-client-windows": "npm run clean-windows && parcel client/src/index.html --out-dir client/dist",
+    "clean-windows": "if exist .cache rd /s /q \".cache\" && if exist client/dist rd /s /q \"client/dist\"",
+    "kill-bg-windows": "taskkill /IM \"node.exe\" /F"
   },
   "jest": {
     "testEnvironment": "node"
@@ -34,6 +38,10 @@
   },
   "homepage": "https://github.com/AxoyTO/Blockchain#readme",
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.19.1",
     "elliptic": "^6.5.4",
