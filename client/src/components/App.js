@@ -19,7 +19,7 @@ class App extends Component {
                 <img className='logo' src={logo}></img>
                 <div>
                     <br />
-                    Welcome to the Axoy Chain...
+                    Welcome to the AxoyChain!
                 </div>
                 <br />
                 <div><Link to='/blocks'>Blocks</Link></div>
