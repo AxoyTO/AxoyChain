@@ -2,10 +2,9 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 const path = require('path')
-//const res = require('express/lib/response')
 const Blockchain = require('./blockchain')
-const PubSub = require('./app/pubsub')
-//const PubSub = require('./app/pubsubRedis')
+//const PubSub = require('./app/pubsub')
+const PubSub = require('./app/pubsubRedis')
 const TransactionMiner = require('./app/transaction-miner')
 const TransactionPool = require('./wallet/transaction-pool')
 const Wallet = require('./wallet')
@@ -23,7 +22,8 @@ const app = express()
 const blockchain = new Blockchain()
 const transactionPool = new TransactionPool()
 const wallet = new Wallet()
-const pubsub = new PubSub({ blockchain, transactionPool, wallet })
+//const pubsub = new PubSub({ blockchain, transactionPool, wallet }) //PubNub
+const pubsub = new PubSub({ blockchain, transactionPool, redisUrl: REDIS_URL });
 const transactionMiner = new TransactionMiner({ blockchain, transactionPool, wallet, pubsub })
 
 

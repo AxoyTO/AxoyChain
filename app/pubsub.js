@@ -1,10 +1,10 @@
 const PubNub = require("pubnub")
 
 const credentials = {
-    publishKey: "pub-c-8e1a4b3a-ea18-4599-bb78-34e77efadb42",
-    subscribeKey: "sub-c-e12b7702-8286-11ec-9f2b-a2cedba671e8",
-    secretKey: "sec-c-NWM2NGRmOWUtMjhlYS00ODFhLTgzNWQtOGFhNGFkYWYwNzRj",
-    uuid: "AxoyTO"
+    publishKey: "pub-c-207bf1f4-e2c3-4e4b-b824-f9fba08edcaa",
+    subscribeKey: "sub-c-0764aa20-a789-11ec-94c0-bed45dbe0fe1",
+    //secretKey: "sec-c-NWM2NGRmOWUtMjhlYS00ODFhLTgzNWQtOGFhNGFkYWYwNzRj",
+    //uuid: "AxoyTO"
 }
 
 const CHANNELS = {
