@@ -3,8 +3,8 @@ const INITIAL_DIFFICULTY = 3;
 
 const GENESIS_DATA = {
     timestamp: 1,
-    lastHash: '-----',
-    hash: 'hash-one',
+    lastHash: 'None',
+    hash: 'Genesis-Block-Hash',
     nonce: 1,
     difficulty: INITIAL_DIFFICULTY,
     nonce: 0,
@@ -14,7 +14,7 @@ const GENESIS_DATA = {
 const INITIAL_BALANCE = 1000
 
 const REWARD_INPUT = {
-    address: '*authorized-reward*'
+    address: '*miner-block-reward*'
 }
 
 const MINING_REWARD = 50
