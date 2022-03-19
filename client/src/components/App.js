@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 class App extends Component {
-    state = { walletInfo: {} }
+    state = { walletInfo: {} };
 
     componentDidMount() {
         fetch(`${document.location.origin}/api/wallet-info`)
@@ -12,21 +12,21 @@ class App extends Component {
     }
 
     render() {
-        const { address, balance } = this.state.walletInfo
+        const { address, balance } = this.state.walletInfo;
 
         return (
             <div className='App'>
                 <img className='logo' src={logo}></img>
+                <br />
                 <div>
-                    <br />
                     Welcome to the AxoyChain!
                 </div>
                 <br />
                 <div><Link to='/blocks'>Blocks</Link></div>
-                <div><Link to='/conduct-transaction'>Conduct a transaction</Link></div>
+                <div><Link to='/conduct-transaction'>Conduct a Transaction</Link></div>
                 <div><Link to='/transaction-pool'>Transaction Pool</Link></div>
+                <br />
                 <div className='WalletInfo'>
-                    <br />
                     <div>Address: {address}</div>
                     <div>Balance: {balance}</div>
                 </div>
