@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl, Button } from 'react-bootstrap';
+import { FormGroup, FormControl, Button, FormText } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import history from '../history';
 
@@ -52,22 +52,24 @@ class ConductTransaction extends Component {
                     })
                 }
                 <br />
-                <FormGroup>
-                    <FormControl
-                        input='text'
-                        placeholder='Enter recipient'
-                        value={this.state.recipient}
-                        onChange={this.updateRecipient}
-                    />
-                </FormGroup>
-                <FormGroup>
-                    <FormControl
-                        input='number'
-                        placeholder='Enter amount'
-                        value={this.state.amount}
-                        onChange={this.updateAmount}
-                    />
-                </FormGroup>
+                <Form>
+                    <FormGroup>
+                        <FormControl
+                            input='text'
+                            placeholder='Enter recipient'
+                            value={this.state.recipient}
+                            onChange={this.updateRecipient}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <FormControl
+                            input='number'
+                            placeholder='Enter amount'
+                            value={this.state.amount}
+                            onChange={this.updateAmount}
+                        />
+                    </FormGroup>
+                </Form>
                 <div>
                     <Button
                         variant="danger"
@@ -75,6 +77,7 @@ class ConductTransaction extends Component {
                     >
                         Submit
                     </Button>
+
                 </div>
             </div>
         )
