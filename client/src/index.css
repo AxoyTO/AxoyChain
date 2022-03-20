@@ -58,7 +58,7 @@ body{
     color: #fff;
 }
 
-.TransactionPool .qtip .qtip:hover{
+.TransactionPool .qtip:hover{
     color: #fff;
     border-bottom:0.05em dotted #069
 }
