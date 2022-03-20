@@ -19,7 +19,7 @@ class App extends Component {
                 <img className='logo' src={logo}></img>
                 <br />
                 <div>
-                    Welcome to AxoyChain!
+                    Welcome to AxoyChain!<br />
                     Governance Token of AxoyChain is AxoyCoin with ticker symbol AXC.
                 </div>
                 <br />
