@@ -24,7 +24,7 @@
     "dev-windows": "start /b npm run dev-client-windows && start nodemon index.js",
     "dev-client-windows": "npm run clean-windows && parcel client/src/index.html --out-dir client/dist",
     "clean-windows": "if exist .cache rd /s /q \".cache\" && if exist client/dist rd /s /q \"client/dist\"",
-    "kill-bg-windows": "taskkill /IM \"OpenConsole.exe\" /F && taskkill /IM \"node.exe\" /F"
+    "kill-bg-windows": "taskkill /IM \"node.exe\" /F"
   },
   "jest": {
     "testEnvironment": "node"
