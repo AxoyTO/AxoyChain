@@ -32,7 +32,7 @@ class App extends Component {
                 <br />
                 <div className='WalletInfo'>
                     <br />
-                    <div><span class="hash"></span>Address: {address}</div>
+                    <div><span class="case"></span>Wallet Address: {address}</div>
                     <div><span class="coin"></span>Balance: {balance}</div>
                 </div>
             </div>
