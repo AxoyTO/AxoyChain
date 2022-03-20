@@ -109,6 +109,7 @@ app.get('/api/wallet-info', (req, res) => {
 
 app.get('/api/known-addresses', (req, res) => {
     const addressMap = {};
+    addressMap.push(wallet.publicKey);
 
     for (let block of blockchain.chain) {
         for (let transaction of block.data) {
