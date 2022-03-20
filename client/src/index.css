@@ -146,6 +146,8 @@ a:hover {
 */
 
 div#addressBook li{
+    content:"\027A1";
+    font-size: 13px;
     padding-left: 1rem;
     text-indent: -0.7rem;
 }
