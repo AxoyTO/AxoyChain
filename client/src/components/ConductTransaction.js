@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { OverlayTrigger, Form, FormGroup, FormControl, Button, FormText, FormLabel } from 'react-bootstrap';
+import { Form, FormGroup, FormControl, Button, FormText, FormLabel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import history from '../history';
 
@@ -34,8 +34,6 @@ class ConductTransaction extends Component {
             });
     }
 
-
-
     render() {
         return (
             <div className='ConductTransaction'>
@@ -45,15 +43,8 @@ class ConductTransaction extends Component {
                 </div>
                 <h3>Conduct a Transaction</h3>
                 <br />
-                <OverlayTrigger
-                    placement="right"
-                    delay={{ show: 150, hide: 300 }}
-                    overlay={<Tooltip id="button-tooltip" {...props}>
-                        Wallet addresses with at least 1 transaction in their histories are known addresses
-                    </Tooltip>}
-                >
-                    Known Addresses
-                </OverlayTrigger>
+
+                <h4>Known Addresses</h4>
                 {
                     this.state.knownAddresses.map(knownAddress => {
                         return (
