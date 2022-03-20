@@ -34,6 +34,8 @@ class ConductTransaction extends Component {
             });
     }
 
+
+
     render() {
         return (
             <div className='ConductTransaction'>
@@ -45,10 +47,12 @@ class ConductTransaction extends Component {
                 <br />
                 <OverlayTrigger
                     placement="right"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={<Tooltip id="button-tooltip-2">Wallet addresses with at least 1 transaction in their histories become known addresses</Tooltip>}
+                    delay={{ show: 150, hide: 300 }}
+                    overlay={<Tooltip id="button-tooltip" {...props}>
+                        Wallet addresses with at least 1 transaction in their histories are known addresses
+                    </Tooltip>}
                 >
-                    <h4>Known Addresses</h4>
+                    Known Addresses
                 </OverlayTrigger>
                 {
                     this.state.knownAddresses.map(knownAddress => {
