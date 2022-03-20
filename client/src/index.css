@@ -145,14 +145,17 @@ a:hover {
 }
 */
 
-div#addressBook li{
-    content:"\027A1";
+.addressBook li{
     font-size: 13px;
     padding-left: 1rem;
     text-indent: -0.7rem;
 }
 
-div#addressBook li + li{
+.addressBook li::before{
+    content:"\027A1";
+}
+
+.addressBook li + li{
     margin-top: -5px;
 }
 
