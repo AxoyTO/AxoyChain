@@ -57,7 +57,7 @@ class ConductTransaction extends Component {
                             return (
                                 <ul>
                                     <div key={knownAddress}>
-                                        <li><div>{knownAddress}</div></li>
+                                        <div><li>{knownAddress}</li></div>
                                     </div>
                                 </ul>
                             );
