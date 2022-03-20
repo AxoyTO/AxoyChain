@@ -65,4 +65,35 @@ a {
 
 a:hover {
   background-size: 0 3px, 100% 3px;
+  color: #e66;
+}
+
+/*
+.emoji{
+
+}
+*/
+
+.money::before {
+  content: "\01F4B8";
+}
+
+.block::before{
+    content: "\01F9CA"
+}
+
+.coin::before{
+    content :"\01FA99"
+}
+
+.heart::before{
+    content: "\02764"
+}
+
+.home::before{
+    content: "\01F3E0"
+}
+
+.bank::before{
+    content: "\01F3E6"
 }

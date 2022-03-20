@@ -19,7 +19,7 @@ class App extends Component {
                 <img className='logo' src={logo}></img>
                 <br />
                 <div>
-                    Welcome to AxoyChain!
+                    Welcome to AxoyChain!<span class="heart"></span>
                 </div>
                 <br />
                 <div><br /><Link to='/blocks'>Blocks</Link></div>
@@ -29,7 +29,7 @@ class App extends Component {
                 <div className='WalletInfo'>
                     <br />
                     <div>Address: {address}</div>
-                    <div>Balance: {balance}</div>
+                    <div><span class="coin"></span>Balance: {balance}</div>
                 </div>
             </div>
         );
