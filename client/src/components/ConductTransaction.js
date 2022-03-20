@@ -55,11 +55,11 @@ class ConductTransaction extends Component {
                     {
                         this.state.knownAddresses.map(knownAddress => {
                             return (
-                                <div key={knownAddress}>
-                                    <ul>
-                                        <div>{<span class="rightarrow"> </span> + knownAddress}</div>
-                                    </ul>
-                                </div>
+                                <ul>
+                                    <div key={knownAddress}>
+                                        <li><div>{knownAddress}</div></li>
+                                    </div>
+                                </ul>
                             );
                         })
                     }
@@ -103,7 +103,7 @@ class ConductTransaction extends Component {
                     </Button>
 
                 </div>
-            </div>
+            </div >
         )
     }
 };
