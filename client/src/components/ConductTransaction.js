@@ -43,7 +43,7 @@ class ConductTransaction extends Component {
                 </div>
                 <h3>Conduct a Transaction</h3>
                 <br />
-                <div className='addressBook'>
+                <div className='addressBook' id="addressBook">
                     <p><i
                         class="qtip tip-right"
                         data-tip="Unique wallet addresses with non-empty transaction history are added to the address book"
