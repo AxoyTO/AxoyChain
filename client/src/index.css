@@ -150,10 +150,6 @@ div#addressBook li{
     text-indent: -0.7rem;
 }
 
-div#addressBook .li::before{
-    content:"\027A1 "
-}
-
 div#addressBook li + li{
     margin-top: -5px;
 }
