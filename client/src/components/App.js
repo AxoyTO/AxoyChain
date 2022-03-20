@@ -20,6 +20,7 @@ class App extends Component {
                 <br />
                 <div>
                     Welcome to AxoyChain!
+                    <br />
                 </div>
                 <br />
                 <div><Link to='/blocks'>Blocks</Link></div>
@@ -27,6 +28,7 @@ class App extends Component {
                 <div><Link to='/transaction-pool'>Transaction Pool</Link></div>
                 <br />
                 <div className='WalletInfo'>
+                    <br />
                     <div>Address: {address}</div>
                     <div>Balance: {balance}</div>
                 </div>
