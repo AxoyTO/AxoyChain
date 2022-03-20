@@ -36,7 +36,7 @@ class Blocks extends Component {
 
                             return (
                                 <span key={key} onClick={this.fetchPaginatedBlocks(paginatedId)}>
-                                    <Button size="sm" variant="danger">
+                                    <Button size="sm" variant="primary">
                                         {paginatedId}
                                     </Button>{' '}
                                 </span>
