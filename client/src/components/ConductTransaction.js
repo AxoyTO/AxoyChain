@@ -53,32 +53,37 @@ class ConductTransaction extends Component {
                 }
                 <br />
 
-                <Form>
-                    <FormGroup>
-                        <FormLabel>Recipient Wallet Address:</FormLabel>
-                        <FormControl
-                            input='text'
-                            placeholder="Enter recipient's wallet address"
-                            value={this.state.recipient}
-                            onChange={this.updateRecipient}
-                        />
-                        <FormText>
-                        </FormText>
-                    </FormGroup>
-                    <FormGroup>
-                        <FormLabel>Amount:</FormLabel>
-                        <FormControl
-                            input='number'
-                            placeholder='Enter amount'
-                            value={this.state.amount}
-                            onChange={this.updateAmount}
-                        />
-                    </FormGroup>
-                </Form>
+                <div className='TxForm'>
+                    <Form>
+                        <FormGroup>
+                            <FormLabel>Recipient Wallet Address:</FormLabel>
+                            <FormControl
+                                input='text'
+                                placeholder="Enter recipient's wallet address"
+                                value={this.state.recipient}
+                                onChange={this.updateRecipient}
+                            />
+                            <FormText className="text-muted">
+                                Make sure the wallet address exists and is correct!
+                            </FormText>
+                        </FormGroup>
+
+                        <FormGroup>
+                            <FormLabel>Amount:</FormLabel>
+                            <FormControl
+                                input='number'
+                                placeholder='Enter amount'
+                                value={this.state.amount}
+                                onChange={this.updateAmount}
+                            />
+                        </FormGroup>
+                    </Form>
+                </div>
                 <div>
                     <Button
                         variant="danger"
                         onClick={this.conductTransaction}
+                        type="submit"
                     >
                         Submit
                     </Button>

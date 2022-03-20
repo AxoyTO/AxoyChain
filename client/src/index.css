@@ -39,6 +39,10 @@ body{
     margin: 10%;
 }
 
+.TxForm{
+    text-align: left;
+}
+
 a, a:hover {
     color: #e66;
     text-decoration: underline;
