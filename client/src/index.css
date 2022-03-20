@@ -158,7 +158,7 @@ div#addressBook li + li{
 
 .attention::before{content:"\02757"}
 
-.rightarrow::before{content:"\027A1"}
+.rightarrow::before{content:"\027A1  "}
 
 .addrbook::before{content: "\01F4D6"}
 
