@@ -55,7 +55,8 @@ class ConductTransaction extends Component {
                     {
                         this.state.knownAddresses.map(knownAddress => {
                             return (
-                                <div key={knownAddress} class="rightarrow">
+                                <div key={knownAddress}>
+                                    <span class="rightarrow"> </span>
                                     <div>{knownAddress}</div>
                                 </div>
                             );
