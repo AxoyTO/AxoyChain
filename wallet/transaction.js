@@ -1,4 +1,4 @@
-const uuid = require('uuid/v1');
+const uuid = require('uuid');
 //const uuid = require('uuid') // PubNub
 const { verifySignature } = require('../util');
 const { REWARD_INPUT, MINING_REWARD } = require('../config');
@@ -7,7 +7,7 @@ class Transaction {
     constructor({ senderWallet, recipient, amount, outputMap, input }) {
         //this.id = uuid.v1() // PubNub
         //if outputMap is not defined then this.createOutputMap
-        this.id = uuid();
+        this.id = uuid.v1();
         this.outputMap = outputMap || this.createOutputMap({ senderWallet, recipient, amount });
         //if input is not defined then this.createInput
         this.input = input || this.createInput({ senderWallet, outputMap: this.outputMap });
