@@ -51,11 +51,11 @@ class ConductTransaction extends Component {
                         <span class="addrbook"></span>Address Book</i>
                     </p>
 
+
                     {
                         this.state.knownAddresses.map(knownAddress => {
-                            <span class="rightarrow"> </span>
                             return (
-                                <div key={knownAddress}>
+                                <div key={knownAddress} class="rightarrow">
                                     <div>{knownAddress}</div>
                                 </div>
                             );
@@ -74,7 +74,7 @@ class ConductTransaction extends Component {
                                 onChange={this.updateRecipient}
                             />
                             <FormText className="text-muted">
-                                Make sure the wallet address exists and is correct!
+                                <span class="attention"></span>Make sure the wallet address exists and is correct!
                             </FormText>
                         </FormGroup>
 

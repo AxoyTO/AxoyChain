@@ -156,6 +156,8 @@ div#addressBook li + li{
 
 .money::before {content: "\01F4B8";}
 
+.attention::before{content:"\02757"}
+
 .rightarrow::before{content:"\027A1"}
 
 .addrbook::before{content: "\01F4D6"}
