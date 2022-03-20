@@ -29,6 +29,14 @@ body{
     padding:5%;
 }
 
+.addressBook{
+    text-align: left;
+}
+
+li + li{
+     margin-top: -10px;
+}
+
 .Block{
     border:1px solid #fff;
     padding:5%;
@@ -136,6 +144,10 @@ a:hover {
 
 }
 */
+
+li + li{
+    margin-top: -5px;
+}
 
 .money::before {content: "\01F4B8";}
 

@@ -43,27 +43,28 @@ class ConductTransaction extends Component {
                 </div>
                 <h3>Conduct a Transaction</h3>
                 <br />
-                <p><i
-                    class="qtip tip-right"
-                    data-tip="Unique wallet addresses with non-empty transaction history are added to the address book"
-                >
-                    <span class="addrbook"></span>Address Book</i>
-                </p>
+                <div className='addressBook'>
+                    <p><i
+                        class="qtip tip-right"
+                        data-tip="Unique wallet addresses with non-empty transaction history are added to the address book"
+                    >
+                        <span class="addrbook"></span>Address Book</i>
+                    </p>
 
-                {
-                    this.state.knownAddresses.map(knownAddress => {
-                        return (
-                            <li>
-                                <ul><div key={knownAddress}>
-                                    <div>{knownAddress}</div>
-                                </div>
-                                </ul>
-                            </li>
-                        );
-                    })
-                }
-                <br />
-
+                    {
+                        this.state.knownAddresses.map(knownAddress => {
+                            return (
+                                <li>
+                                    <ul><div key={knownAddress}>
+                                        <div>{knownAddress}</div>
+                                    </div>
+                                    </ul>
+                                </li>
+                            );
+                        })
+                    }
+                    <br />
+                </div>
                 <div className='TxForm'>
                     <Form>
                         <FormGroup>
