@@ -64,7 +64,12 @@ class TransactionPool extends Component {
                     onClick={this.fetchMineTransactions}
                 >
                     <span class="mine"> </span>
-                    Mine the Transactions
+                    <p><i
+                        class="qtip tip-right"
+                        data-tip="By mining the transactions the block data is saved and a new block is created in the chain."
+                    >
+                        <span class="mine"></span> Mine the Transactions</i>
+                    </p>
                 </Button>
             </div>
         )
