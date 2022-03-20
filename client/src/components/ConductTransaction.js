@@ -55,7 +55,7 @@ class ConductTransaction extends Component {
                 <FormGroup>
                     <FormControl
                         input='text'
-                        placeholder='recipient'
+                        placeholder='Enter recipient'
                         value={this.state.recipient}
                         onChange={this.updateRecipient}
                     />
@@ -63,7 +63,7 @@ class ConductTransaction extends Component {
                 <FormGroup>
                     <FormControl
                         input='number'
-                        placeholder='amount'
+                        placeholder='Enter amount'
                         value={this.state.amount}
                         onChange={this.updateAmount}
                     />
