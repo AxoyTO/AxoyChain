@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Transaction = ({ transaction }) => {
-    const { input, outputMap } = transaction
+    const { input, outputMap } = transaction;
     const recipients = Object.keys(outputMap);
 
     return (
@@ -15,7 +15,7 @@ const Transaction = ({ transaction }) => {
                 ))
             }
         </div>
-    )
+    );
 }
 
 export default Transaction;
