@@ -143,13 +143,13 @@ a:hover {
 
 
 .addressBook li{
-    font-size: 13px;
+    font-size: 16px;
     text-indent: -0.7rem;
     list-style: none;
 }
 
 .addressBook li::before{
-    content:"\027A1";
+    content:"\027A1  ";
 }
 
 .addressBook li + li{
