@@ -29,6 +29,7 @@ class Blocks extends Component {
                         Home
                     </Link>
                 </div>
+                <div><span class="money"></span><Link to='/conduct-transaction'>Conduct a Transaction</Link></div>
                 <h3>Blocks</h3>
                 <div>
                     {
