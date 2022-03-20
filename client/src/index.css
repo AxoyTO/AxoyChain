@@ -43,7 +43,7 @@ body{
     text-align: left;
 }
 
-.tooltip {
+.qtip {
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -53,9 +53,9 @@ body{
   font-style: normal;
   transition:all .25s ease-in-out
 }
-.tooltip:hover {color:#069;border-bottom:0.05em dotted #069}
-/*the tip*/
-.tooltip:before {
+.qtip:hover {color:#069;border-bottom:0.05em dotted #069}
+
+.qtip:before {
   content: attr(data-tip);
   font-size: 14px;
   position: absolute;
@@ -75,7 +75,7 @@ body{
   letter-spacing: 0;
   font-weight: 600
 }
-.tooltip:after {
+.qtip:after {
   width: 0;
   height: 0;
   border-style: solid;
@@ -85,20 +85,20 @@ body{
   visibility: hidden;
   transition: all .3s ease-in-out
 }
-.tooltip:hover:before,
-.tooltip:hover:after {
+.qtip:hover:before,
+.qtip:hover:after {
   visibility: visible;
   opacity: 1
 }
 
-.tooltip.tip-right:before {
+.qtip.tip-right:before {
   right: 0;
   top: 50%;
   transform: translate(calc(100% + 8px), -50%);
   box-sizing: border-box;
   border-radius: 3px;
 }
-.tooltip.tip-right:after {
+.qtip.tip-right:after {
   border-width: 8px 8px 8px 0;
   border-color: transparent rgba(10, 20, 30, 0.85) transparent transparent;
   right: -8px;

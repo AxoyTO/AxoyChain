@@ -43,7 +43,7 @@ class ConductTransaction extends Component {
                 </div>
                 <h3>Conduct a Transaction</h3>
                 <br />
-                <p><i class="tooltip tip-right" data-tip="Right, finally"><span class="addrbook"></span>right</i></p>
+                <p><i class="qtip tip-right" data-tip="Right, finally"><span class="addrbook"></span>right</i></p>
                 <h4>Known Addresses</h4>
                 {
                     this.state.knownAddresses.map(knownAddress => {
