@@ -44,16 +44,17 @@ class ConductTransaction extends Component {
                 <h3>Conduct a Transaction</h3>
                 <br />
                 <p><i class="qtip tip-right" data-tip="Right, finally"><span class="addrbook"></span>right</i></p>
-                {
-                    this.state.knownAddresses.map(knownAddress => {
-                        return (
-                            <div key={knownAddress}>
-                                <div>{knownAddress}</div>
-                                <br />
-                            </div>
-                        );
-                    })
-                }
+                <li>
+                    {
+                        this.state.knownAddresses.map(knownAddress => {
+                            return (
+                                <div key={knownAddress}>
+                                    <div>{knownAddress}</div>
+                                </div>
+                            );
+                        })
+                    }
+                </li>
                 <br />
 
                 <div className='TxForm'>
