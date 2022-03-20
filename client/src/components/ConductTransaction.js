@@ -53,23 +53,27 @@ class ConductTransaction extends Component {
                 }
                 <br />
 
-                <FormGroup>
-                    <FormControl
-                        input='text'
-                        placeholder='Enter recipient'
-                        value={this.state.recipient}
-                        onChange={this.updateRecipient}
-                    />
-                </FormGroup>
-                <FormGroup>
-                    <FormControl
-                        input='number'
-                        placeholder='Enter amount'
-                        value={this.state.amount}
-                        onChange={this.updateAmount}
-                    />
-                </FormGroup>
+                <form>
+                    <FormGroup>
+                        <FormControl
+                            input='text'
+                            placeholder='Enter recipient'
+                            value={this.state.recipient}
+                            onChange={this.updateRecipient}
+                        />
+                        <FormText>
 
+                        </FormText>
+                    </FormGroup>
+                    <FormGroup>
+                        <FormControl
+                            input='number'
+                            placeholder='Enter amount'
+                            value={this.state.amount}
+                            onChange={this.updateAmount}
+                        />
+                    </FormGroup>
+                </form>
                 <div>
                     <Button
                         variant="danger"
