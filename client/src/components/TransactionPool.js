@@ -63,7 +63,7 @@ class TransactionPool extends Component {
                     variant="danger"
                     onClick={this.fetchMineTransactions}
                 >
-                    <span class="mine"></span>
+                    <span class="mine"> </span>
                     Mine the Transactions
                 </Button>
             </div>

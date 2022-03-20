@@ -38,7 +38,7 @@ class ConductTransaction extends Component {
         return (
             <div className='ConductTransaction'>
                 <div>
-                    <span class="home"> </span>
+                    <span class="home"></span>
                     <Link to='/'>Home</Link>
                 </div>
                 <h3>Conduct a Transaction</h3>
@@ -88,6 +88,7 @@ class ConductTransaction extends Component {
                         onClick={this.conductTransaction}
                         type="submit"
                     >
+                        <span class="money"> </span>
                         Submit
                     </Button>
 
