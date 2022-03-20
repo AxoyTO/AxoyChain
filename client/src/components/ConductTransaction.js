@@ -43,7 +43,7 @@ class ConductTransaction extends Component {
                 </div>
                 <h3>Conduct a Transaction</h3>
                 <br />
-
+                <p class="tooltip fade" data-title="Javascript">JS</p>
                 <h4>Known Addresses</h4>
                 {
                     this.state.knownAddresses.map(knownAddress => {
