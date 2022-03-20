@@ -74,9 +74,7 @@ a:hover {
 }
 */
 
-.money::before {
-  content: "\01F4B8";
-}
+.money::before {content: "\01F4B8";}
 
 .block::before{content: "\01F9CA"}
 
