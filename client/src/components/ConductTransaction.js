@@ -43,7 +43,8 @@ class ConductTransaction extends Component {
                 </div>
                 <h3>Conduct a Transaction</h3>
                 <br />
-                <p><i class="tooltip tip-right" data-tip="Known Addresses">Wallet addresses with non-empty transaction histories are known addresses</i></p>
+                <p><i class="tooltip tip-right" data-tip="Wallet addresses with non-empty transaction histories are known addresses">Known Addresses</i></p>
+                <h4>Known Addresses</h4>
                 {
                     this.state.knownAddresses.map(knownAddress => {
                         return (
