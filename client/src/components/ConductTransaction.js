@@ -43,9 +43,7 @@ class ConductTransaction extends Component {
                 </div>
                 <h3>Conduct a Transaction</h3>
                 <br />
-                <span class="tooltip fade" data-tooltip="Wallet addresses with conducted transaction histories are known addresses">
-                    <h4>Known Addresses</h4>
-                </span>
+                <h4>Known Addresses</h4>
                 {
                     this.state.knownAddresses.map(knownAddress => {
                         return (
