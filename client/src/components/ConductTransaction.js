@@ -43,7 +43,12 @@ class ConductTransaction extends Component {
                 </div>
                 <h3>Conduct a Transaction</h3>
                 <br />
-                <p><i class="qtip tip-right" data-tip="Right, finally"><span class="addrbook"></span>right</i></p>
+                <p><i
+                    class="qtip tip-right"
+                    data-tip="Unique wallet addresses with non-empty transaction history are added to the address book"
+                >
+                    <span class="addrbook"></span>Address Book</i>
+                </p>
 
                 {
                     this.state.knownAddresses.map(knownAddress => {
