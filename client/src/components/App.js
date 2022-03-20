@@ -20,7 +20,7 @@ class App extends Component {
                 <br />
                 <div>
                     Welcome to AxoyChain!<br />
-                    Main token of AxoyChain is AxoyCoin with ticker symbol AXC
+                    AxoyChain's ticker symbol is AXC
                 </div>
                 <br />
                 <div>
