@@ -29,14 +29,6 @@ body{
     padding:5%;
 }
 
-.addressBook{
-    text-align: left;
-}
-
-li + li{
-     margin-top: -10px;
-}
-
 .Block{
     border:1px solid #fff;
     padding:5%;
@@ -144,6 +136,14 @@ a:hover {
 
 }
 */
+
+.addressBook{
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 
 .addressBook li{
     font-size: 13px;
