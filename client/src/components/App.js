@@ -19,16 +19,20 @@ class App extends Component {
                 <img className='logo' src={logo}></img>
                 <br />
                 <div>
-                    Welcome to AxoyChain!<span class="heart"></span>
+                    Welcome to AxoyChain!
                 </div>
                 <br />
-                <div><br /><Link to='/blocks'>Blocks</Link></div>
-                <div><Link to='/conduct-transaction'>Conduct a Transaction</Link></div>
-                <div><Link to='/transaction-pool'>Transaction Pool</Link></div>
+                <div>
+                    <br />
+                    <span class="block"></span>
+                    <Link to='/blocks'>Blocks</Link>
+                </div>
+                <div><span class="money"></span><Link to='/conduct-transaction'>Conduct a Transaction</Link></div>
+                <div><span class="bank"></span><Link to='/transaction-pool'>Transaction Pool</Link></div>
                 <br />
                 <div className='WalletInfo'>
                     <br />
-                    <div>Address: {address}</div>
+                    <div><span class="hash"></span>Address: {address}</div>
                     <div><span class="coin"></span>Balance: {balance}</div>
                 </div>
             </div>

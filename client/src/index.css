@@ -78,22 +78,16 @@ a:hover {
   content: "\01F4B8";
 }
 
-.block::before{
-    content: "\01F9CA"
-}
+.block::before{content: "\01F9CA"}
 
-.coin::before{
-    content :"\01FA99"
-}
+.coin::before{content :"\01FA99"}
 
-.heart::before{
-    content: "\02764"
-}
+.heart::before{content: "\02764"}
 
-.home::before{
-    content: "\01F3E0"
-}
+.home::before{content: "\01F3E0"}
 
-.bank::before{
-    content: "\01F3E6"
-}
+.hash::before{content: "\023"}
+
+.bank::before{content: "\01F3E6"}
+
+.mine::before{content: "\026CF"}
