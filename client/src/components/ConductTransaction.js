@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl, Button, FormText } from 'react-bootstrap';
+import { Form, FormGroup, FormControl, Button, FormText, FormLabel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import history from '../history';
 
@@ -53,19 +53,20 @@ class ConductTransaction extends Component {
                 }
                 <br />
 
-                <form>
+                <Form>
                     <FormGroup>
+                        <FormLabel>Recipient Wallet Address:</FormLabel>
                         <FormControl
                             input='text'
-                            placeholder='Enter recipient'
+                            placeholder="Enter recipient's wallet address"
                             value={this.state.recipient}
                             onChange={this.updateRecipient}
                         />
                         <FormText>
-
                         </FormText>
                     </FormGroup>
                     <FormGroup>
+                        <FormLabel>Amount:</FormLabel>
                         <FormControl
                             input='number'
                             placeholder='Enter amount'
@@ -73,7 +74,7 @@ class ConductTransaction extends Component {
                             onChange={this.updateAmount}
                         />
                     </FormGroup>
-                </form>
+                </Form>
                 <div>
                     <Button
                         variant="danger"
