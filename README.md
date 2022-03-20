@@ -1,3 +1,1 @@
-PLACEHOLDER
-
-Studying Blockchain
+_A better README will be here very soon!_ :blush:
