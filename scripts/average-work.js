@@ -25,3 +25,4 @@ for (let i = 0; i < 10000; i++) {
     console.log(`Time to mine block: ${timeDiff}.ms Difficulty ${nextBlock.difficulty}. Average time: ${average}ms`)
 }
 
+
