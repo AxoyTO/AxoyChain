@@ -11,7 +11,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
     "start": "npm run build-client & node index.js",
     "dev-redis": "npm run dev-client & npm run start-redis && cross-env ENV='development' nodemon index.js",
     "dev": "npm run dev-client & cross-env ENV='development' nodemon index.js",
